@@ -1,0 +1,18 @@
+{
+    "personale":[
+        {
+            "name": "Carsten",
+            "lastname": "Dohrmann",
+            "position": "Formand",
+            "image": "images/crew/Carsten Dohrmann.png",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "name": "Michael",
+            "lastname": "Jensen",
+            "position": "Næstformand",
+            "image": "images/crew/KimT.png",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+    ]
+}
