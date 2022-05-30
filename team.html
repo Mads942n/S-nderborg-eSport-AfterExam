@@ -9,8 +9,32 @@
 </head>
 <body>
     <header>
+        <nav class="navbar">
+        <img src="" alt="Logo"> <!--Der skal være et CSS class, "Hidden"
+                                    der bliver tilføjet når det er ipad størrelse eller mindre-->
         <input type="search" name="" id="">
-        <button>Burger Menu</button>
+        <div class="navbar-container"> <!-- Der bliver tilføjet en Hidden class,
+                                            når den bliver vist på desktop-->
+            <input type="checkbox">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="hold.html">Hold</a></li>
+                <li><a href="team.html">Vores Team</a></li>
+                <li><a href="praktiskinfo.html">Praktisk Info</a></li>
+            </ul>
+        </div>
+        <div class="Hidden"> <!--Classen hidden bliver kun sat på når det er ipad størrelse eller mindre-->
+            <a href="index.html">Forside</a>
+            <a href="hold.html">Hold</a>
+            <a href="team.html">Vores Team</a>
+            <a href="praktiskinfo.html">Praktisk Info</a>
+        </div>
+        </nav>
     </header>
     <main>
         <div>
