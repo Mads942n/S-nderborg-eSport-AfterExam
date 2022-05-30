@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style class="style.css"></style>
     <title>Forside</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <img src="images/Logo.png" alt="Logo" />
+</head>
+<body>
+    <header class="header">
+      <nav class="header__navbar">
+        <img src="images/Logo.png" alt="Logo" class="header__logo"/>
         <!--Der skal være et CSS class, "Hidden"
                                   der bliver tilføjet når det er ipad størrelse eller mindre-->
-        <input type="search" name="" id="" />
-        <div class="navbar-container">
+        <input type="search" name="" id="" class="header__searchbar"/>
+
+        <section class="navbar-container">
           <!-- Der bliver tilføjet en Hidden class,
                                           når den bliver vist på desktop-->
           <input type="checkbox" />
@@ -29,14 +30,7 @@
             <li><a href="_team.html">Vores Team</a></li>
             <li><a href="_praktiskinfo.html">Praktisk Info</a></li>
           </ul>
-        </div>
-        <div class="Hidden">
-          <!--Classen hidden bliver kun sat på når det er ipad størrelse eller mindre-->
-          <a href="_index.html">Forside</a>
-          <a href="_hold.html">Hold</a>
-          <a href="_team.html">Vores Team</a>
-          <a href="_praktiskinfo.html">Praktisk Info</a>
-        </div>
+        </section>
       </nav>
     </header>
     <main>
@@ -52,7 +46,7 @@
         </div>
         <a href="_hold/_csgo.html"> Læs om hold</a>
       </div>
-      <div class="Dots">
+      <div class="dots">
         <span class="dot"></span>
         <span class="dot"></span>
         <span class="dot"></span>
@@ -69,7 +63,7 @@
       </article>
 
       <p>Er du i tvivl om, tider, priser, lokation eller andet?</p>
-      <button>
+      <button class="">
         <a href="_praktiskinfo.html">Praktisk info</a>
       </button>
     </main>
