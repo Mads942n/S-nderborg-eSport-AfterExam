@@ -9,9 +9,33 @@
   </head>
   <body>
     <header>
-      <input type="search" name="" id="" />
-      <button>Burger Menu</button>
-    </header>
+      <nav class="navbar">
+      <img src="" alt="Logo"> <!--Der skal være et CSS class, "Hidden"
+                                  der bliver tilføjet når det er ipad størrelse eller mindre-->
+      <input type="search" name="" id="">
+      <div class="navbar-container"> <!-- Der bliver tilføjet en Hidden class,
+                                          når den bliver vist på desktop-->
+          <input type="checkbox">
+          <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+          </div>
+          <ul class="menu-items">
+              <li><a href="_index.html">Forside</a></li>
+              <li><a href="_hold.html">Hold</a></li>
+              <li><a href="_team.html">Vores Team</a></li>
+              <li><a href="_praktiskinfo.html">Praktisk Info</a></li>
+          </ul>
+      </div>
+      <div class="Hidden"> <!--Classen hidden bliver kun sat på når det er ipad størrelse eller mindre-->
+          <a href="_index.html">Forside</a>
+          <a href="_hold.html">Hold</a>
+          <a href="_team.html">Vores Team</a>
+          <a href="_praktiskinfo.html">Praktisk Info</a>
+      </div>
+      </nav>
+  </header>
     <main>
       <div class="Slideshow">
         <div class="Slide 1">
@@ -23,7 +47,7 @@
         <div class="Slide 3">
           <img src="" alt="Billede 3" />
         </div>
-        <a href="hold.html"> Læs om hold</a>
+        <a href="_hold/_csgo.html"> Læs om hold</a>
       </div>
       <div class="Dots">
         <span class="dot"></span>
@@ -43,7 +67,7 @@
 
       <p>Er du i tvivl om, tider, priser, lokation eller andet?</p>
       <button>
-        <a href="praktiskinfo.html">Praktisk info</a>
+        <a href="_praktiskinfo.html">Praktisk info</a>
       </button>
     </main>
     <footer>

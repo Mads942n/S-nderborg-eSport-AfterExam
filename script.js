@@ -25,6 +25,10 @@ Vores Team:
             <img src="" alt="Spiller Billede">
         </article>
 
+Praktisk info:
+    -Dropdown info kasser, med animation
+    - Google maps integration:
+      https://developers.google.com/maps/documentation/javascript/adding-a-google-map#maps_add_map-javascript
 
 
 
@@ -32,8 +36,7 @@ Vores Team:
 
 
 
-Google maps integration:
-https://developers.google.com/maps/documentation/javascript/adding-a-google-map#maps_add_map-javascript
+
 
 
 
