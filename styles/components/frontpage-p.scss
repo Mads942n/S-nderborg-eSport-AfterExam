@@ -1,2 +1,26 @@
 @use "../core/" as *;
 
+.infoboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+
+    background-color: $primarycolor;
+
+    width: 23.5em;
+    height: 20.5em;
+
+    &__title {
+        font-family: $fontprimary;
+        font-size: 1.5em;
+    }
+
+
+
+
+    &__img {
+        width: 4.25em;
+        
+    }
+}
