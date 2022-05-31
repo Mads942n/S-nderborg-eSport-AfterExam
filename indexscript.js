@@ -15,6 +15,15 @@ function currentSlide(n) {
     console.log(n)
 }
 
+let x = 1
+
+while (x > 1, x++){
+    setTimeout(() => {
+        currentSlide(slideIndex + 1)
+    }, 500);
+}
+
+
 function showSlides(n) {
   let i;
   
