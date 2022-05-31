@@ -26,7 +26,7 @@ V̶o̶r̶e̶s̶ T̶e̶a̶m̶:̶
         <̶/̶a̶r̶t̶i̶c̶l̶e̶>̶
 
 Praktisk info:
-    -Dropdown info kasser, med animation
+    -̶D̶r̶o̶p̶d̶o̶w̶n̶ i̶n̶f̶o̶ k̶a̶s̶s̶e̶r̶,̶ m̶e̶d̶ a̶n̶i̶m̶a̶t̶i̶o̶n̶
     - Google maps integration:
       https://developers.google.com/maps/documentation/javascript/adding-a-google-map#maps_add_map-javascript
 

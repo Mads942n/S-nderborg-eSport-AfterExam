@@ -1,11 +1,16 @@
 @use "../core/" as *;
 
 .header {
-    &__navbar {
+    .navbar {
         display: flex;
-    }
+        
+        &__logo {
+            max-width: 5%;
+            max-height: 5%;
+        }
+    }  
 
-    &__logo {
-        max-width: 20%;
-    }
 }
+
+
+
