@@ -10,6 +10,22 @@ dots.forEach(e => {
     e.addEventListener('click', () => currentSlide(e.getAttribute('id')))
 });
 
+const prev = document.querySelector('.prev');
+prev.addEventListener('click', () => {
+    plusSlides(prev.getAttribute('id'))
+})
+
+const next = document.querySelector('.next');
+next.addEventListener('click', () => {
+    plusSlides(next.getAttribute('id'))
+    console.log(next.getAttribute('id'))
+})
+
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
 function currentSlide(n) {
     showSlides(slideIndex = n);
     console.log(n)
@@ -17,9 +33,12 @@ function currentSlide(n) {
 
 let x = 1
 
-while (x > 1, x++){
+//slideshowloop();
+
+function slideshowloop(){
     setTimeout(() => {
         currentSlide(slideIndex + 1)
+        slideshowloop()
     }, 500);
 }
 
