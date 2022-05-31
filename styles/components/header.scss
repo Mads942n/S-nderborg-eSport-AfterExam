@@ -11,14 +11,32 @@
         &__logo {
             max-width: 10%;
         }
-    .burger__checkbox {
+        .burger__checkbox {
         opacity: 0%;
-    }
-    .hidden {
+        position: absolute;
+        right: 1em;
+        top: 1em;
+        width: 3em;
+        height: 3em;
+        }
+        .hidden {
         display: none;
+        }
+        .searchicon {
+        padding: 1em;
+        }
     }
+    .burger__lines {
+        margin: 1em;
     }
-    }
+    .burger__line {
+            width: 2em;
+            height: 0.5em;
+            background-color: #f98e39;
+            border-radius: 1em;
+            margin: 0.2em;
+        }
+}
 @media screen and (max-width: 1000px) {
         .navbar {
             &__logo {
