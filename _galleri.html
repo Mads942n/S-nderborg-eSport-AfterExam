@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style class="style.css"></style>
+    <link rel="stylesheet" href="style.css">
     <title>Galleri</title>
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
-          <img src="images/Logo.png" alt="Logo" class="navbar__logo"/>
+          <img src="images/Logo.png" alt="Logo" class="navbar__logo hidden"/>
           <!--Der skal være et CSS class, "Hidden"
                                     der bliver tilføjet når det er ipad størrelse eller mindre-->
           <input type="search" name="" id="" class="navbar__searchbar"/>
@@ -18,7 +18,7 @@
           <section class="burger">
             <!-- Der bliver tilføjet en Hidden class,
                                             når den bliver vist på desktop-->
-            <input type="burger__checkbox" />
+            <input type="checkbox" class="burger__checkbox"/>
             <button class="burger__lines">
               <span class="burger__line line1"></span>
               <span class="burger__line line2"></span>
@@ -34,6 +34,7 @@
         </nav>
       </header>
     <main>
+        <img src="images/CSGO/IMG_9023.JPG" alt="" class="hero">
         <section class="hero-video">
             <video playsinline autoplay muted loop>
                 <source src="Sample.mp4" type="video/mp4">
