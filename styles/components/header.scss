@@ -5,13 +5,13 @@
     position: absolute;
     .navbar {
         display: flex;
+        justify-content: space-between;
         
         &__logo {
             max-width: 10%;
             max-height: 1%;
         }
-    }  
-}
-
+    }
+    } 
 
 
