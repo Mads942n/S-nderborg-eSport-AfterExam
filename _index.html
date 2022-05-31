@@ -6,59 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style class="style.css"></style>
     <title>Forside</title>
-<<<<<<< HEAD
 </head>
 <body>
     <header class="header">
-      <nav class="header__navbar">
-        <img src="images/Logo.png" alt="Logo" class="header__logo"/>
-=======
-  </head>
-  <body>
-    <header>
       <nav class="navbar">
-        <img src="images/Logo.png" alt="Logo" class="logo" />
->>>>>>> 5b7c298df3c8fa83822217611874471336386179
+        <img src="images/Logo.png" alt="Logo" class="navbar__logo"/>
         <!--Der skal være et CSS class, "Hidden"
                                   der bliver tilføjet når det er ipad størrelse eller mindre-->
-        <input type="search" name="" id="" class="header__searchbar"/>
+        <input type="search" name="" id="" class="navbar__searchbar"/>
 
-        <section class="navbar-container">
+        <section class="burger">
           <!-- Der bliver tilføjet en Hidden class,
                                           når den bliver vist på desktop-->
-          <input type="checkbox" />
-          <div class="hamburger-lines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-          </div>
-          <ul class="menu-items">
-            <li><a href="_index.html">Forside</a></li>
-            <li><a href="_hold.html">Hold</a></li>
-            <li><a href="_team.html">Vores Team</a></li>
-            <li><a href="_praktiskinfo.html">Praktisk Info</a></li>
+          <input type="burger__checkbox" />
+          <button class="burger__lines">
+            <span class="burger__line line1"></span>
+            <span class="burger__line line2"></span>
+            <span class="burger__line line3"></span>
+          </button>
+          <ul class="menu">
+            <li class="menu__item item1"><a href="_index.html">Forside</a></li>
+            <li class="menu__item item2><a href="_hold.html">Hold</a></li>
+            <li class="menu__item item3><a href="_team.html">Vores Team</a></li>
+            <li class="menu__item item4><a href="_praktiskinfo.html">Praktisk Info</a></li>
           </ul>
         </section>
       </nav>
     </header>
     <main>
-      <div class="Slideshow">
-        <div class="Slide 1">
+      <section class="slideshow">
+        <div class="slide 1">
           <img src="" alt="Billede 1" />
         </div>
-        <div class="Slide 2">
+        <div class="slide 2">
           <img src="" alt="Billede 2" />
         </div>
-        <div class="Slide 3">
+        <div class="slide 3">
           <img src="" alt="Billede 3" />
         </div>
+        <button>
         <a href="_hold/_csgo.html"> Læs om hold</a>
-      </div>
+        </button>
+      </section>
       <div class="dots">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+        <span class="dots__dot"></span>
+        <span class="dots__dot--opacity"></span>
+        <span class="dots__dot"></span>
+        <span class="dots__dot"></span>
       </div>
       <article>
         <h1>Esport er for alle</h1>
@@ -71,7 +65,7 @@
       </article>
 
       <p>Er du i tvivl om, tider, priser, lokation eller andet?</p>
-      <button class="">
+      <button class="praktiskinfo">
         <a href="_praktiskinfo.html">Praktisk info</a>
       </button>
     </main>
