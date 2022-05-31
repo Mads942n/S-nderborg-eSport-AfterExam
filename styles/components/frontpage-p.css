@@ -115,6 +115,7 @@ del {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+<<<<<<< Updated upstream
 }
 
 .infoboard {
@@ -124,4 +125,6 @@ table {
 .infoboard__img {
   width: 4.25em;
   height: 5em;
+=======
+>>>>>>> Stashed changes
 }
