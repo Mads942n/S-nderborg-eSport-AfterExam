@@ -8,31 +8,29 @@
     <title>Forside</title>
 </head>
 <body>
-    <header class="header">
-      <nav class="navbar">
-        <img src="images/Logo.png" alt="Logo" class="navbar__logo"/>
-        <!--Der skal være et CSS class, "Hidden"
-                                  der bliver tilføjet når det er ipad størrelse eller mindre-->
-        <input type="search" name="" id="" class="navbar__searchbar"/>
-
-        <section class="burger">
-          <!-- Der bliver tilføjet en Hidden class,
-                                          når den bliver vist på desktop-->
-          <input type="burger__checkbox" />
-          <button class="burger__lines">
-            <span class="burger__line line1"></span>
-            <span class="burger__line line2"></span>
-            <span class="burger__line line3"></span>
-          </button>
-          <ul class="menu">
+  <header class="header">
+    <nav class="navbar">
+      <img src="images/Logo.png" alt="Logo" class="navbar__logo hidden"/>
+        <!-- Der bliver tilføjet en Hidden class,
+                                        når den bliver vist på desktop-->
+        <ul class="menu">
             <li class="menu__item item1"><a href="_index.html">Forside</a></li>
             <li class="menu__item item2"><a href="_hold.html">Hold</a></li>
             <li class="menu__item item3"><a href="_team.html">Vores Team</a></li>
             <li class="menu__item item4"><a href="_praktiskinfo.html">Praktisk Info</a></li>
-          </ul>
+        </ul>
+        <img src="images/search.png" class="searchicon"/>
+        <section class="burger"></section>
+        <input type="checkbox" class="burger__checkbox"/>
+        <section class="burger__lines">
+          <div class="burger__line line1"></div>
+          <div class="burger__line line2"></div>
+          <div class="burger__line line3"></div>
         </section>
-      </nav>
-    </header>
+        <input type="search" name="" id="" class="navbar__searchbar hidden"/>
+      </section>
+    </nav>
+  </header>
     <main>
       <section class="slideshow">
         <div class="slideshow__slide">
