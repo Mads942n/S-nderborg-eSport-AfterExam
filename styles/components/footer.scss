@@ -1,0 +1,22 @@
+@use "../core/" as *;
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.420508) 58.85%, rgba(0, 0, 0, 0.307292) 83.33%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;  
+    bottom: -100%;
+    padding: 1em;
+    &__text {
+        color: white;
+        margin: auto 0;
+        opacity: 50%;
+        font-size: 50%;
+    }
+    &__facebook {
+        max-width: 5%;
+    }
+    &__instagram {
+        max-width: 5%;
+    }
+}
