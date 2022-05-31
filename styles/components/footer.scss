@@ -8,7 +8,8 @@
     bottom: -100%;
     padding: 1em;
     &__text {
-        color: white;
+        color: $textprimary;
+        font-family: $fontsecondary;
         margin: auto 0;
         opacity: 50%;
         font-size: 50%;
