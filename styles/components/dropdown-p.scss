@@ -1,0 +1,35 @@
+@use "../core/" as *;
+
+.main{
+    gap: 2em;
+}
+.dropdown {
+    grid-column: 1/3;
+    margin: 0 auto;
+    
+    &__button{
+        background-color: $primarycolor;
+        box-shadow: 1em 1em white;
+        all: unset;
+        background: $primarycolor;   
+        width: 14em;
+        height: 3em;
+        text-align: center;
+        margin:auto;
+        font-family: $fontprimary;
+        color: $textprimary;
+            
+        p {
+            font-weight: bold;
+        }
+    }
+    a {
+        text-decoration: none;
+    }
+    &__content {
+        background-color: white;
+        display: none;
+
+    }
+}
+    

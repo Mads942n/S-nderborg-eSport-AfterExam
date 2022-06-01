@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style class="style.css"></style>
+    <link rel="stylesheet" href="style.css">
     <title>Praktisk Info</title>
 </head>
 <body>
@@ -31,31 +31,33 @@
           </section>
         </nav>
       </header>
-    <main>
+    <main class="main">
         <h1>Praktisk information</h1>
-        <article class="Kontigent 1">
-            <h2>Kontigent 1</h2>
-            <p>Pæriode: 
+        <article class="kontigent">
+            <h2 class="kontigent__title">Kontigent 1</h2>
+            <p class="kontigent__period">Pæriode: 
                 12 mdr. </p>
-            <p>Pris:
+            <p class="kontigent__price">Pris:
                 1000kr.</p>
-            <button>
-                <a href="">Læs mere</a>
-            </button>
+                <a class="kontigent__button" href="">
+                    <button class="primary__button"><p>LÆS MERE</p></button>
+                </a>
         </article>
-        <article class="Kontigent 2">
-            <h2>Kontigent 2</h2>
-            <p>Pæriode: 
+        <article class="kontigent">
+            <h2 class="kontigent__title">Kontigent 2</h2>
+            <p class="kontigent__period">Pæriode: 
                 6 mdr. </p>
-            <p>Pris:
+            <p class="kontigent__price">Pris:
                 600kr.</p>
-            <button>
-                <a href="">Læs mere</a>
-            </button>
+                <a class="kontigent__button" href="">
+                    <button class="primary__button"><p>LÆS MERE</p></button>
+                </a>
         </article>
 
         <article class="dropdown">
-            <h1 class="dropdown__title">For at blive medlem</h1>
+            <a class="dropdown__button">
+                <button class="dropdown__button"><p>For at blive medlem</p></button>
+            </a>
             <p class="dropdown__content">Sønderborg eSport er for alle der finder glæde i det sociale ved gaming, uanset erfaring og niveau.
 
                 Hos sønderborg esport har vi mange forskellige hold som træner endten fra 17-19 eller fra 19-21.
@@ -65,14 +67,18 @@
                 Kontigentet går til at foreningen kan udvide klubben samt købe nyt matriale. Ud over det er der mulighed for at benytte foreningens maskiner, som ikke koster ekstra. </p>
         </article>
         <article class="dropdown">
-            <h1 class="dropdown__title">Miljø og trivsel</h1>
+            <a class="dropdown__button">
+                <button class="dropdown__button"><p>For at blive medlem</p></button>
+            </a>
             <p class="dropdown__content">Sønderborg eSport har til formål at fremme eSporten i og omkring Sønderborg kommune, for alle som udviser interesse eller kunne tænke sig at vide mere om eSport.
                 Vi lægger vægt på kommunikation, trivsel og teambuilding, både inde og ude for gaming verdenen.
                 
                 Ud over det ønsker vi at fremme det sociale potentiale inden for eSport og har fokus på motion, kost og ergonomi, samt digital dannelse.</p>
         </article>
         <article class="dropdown">
-            <h1 class="dropdown__title">Regler hos Sønderborg eSport</h1>
+            <a class="dropdown__button">
+                <button class="dropdown__button"><p>For at blive medlem</p></button>
+            </a>
             <p class="dropdown__content">Lokalet må kun bruges til det formål, det er bygget op til.
                 Brugerne af lokalet skal følge brandmyndighedernes flugtanvisninger.
                 Rygning og indtagelse af alkohol på skolens område er forbudt.
@@ -90,7 +96,9 @@
                 Overholdes ovenstående regler ikke, forbeholder Sønderborg eSport sig retten til at udstede bøder og evt. bortvisning. </p>
         </article>
         <article class="dropdown">
-            <h1 class="dropdown__title">Forventninger til medlemmer</h1>
+            <a class="dropdown__button">
+                <button class="dropdown__button"><p>For at blive medlem</p></button>
+            </a>
             <p class="dropdown__content">At du melder afbud i god tid til træning og kamp, således træneren ved hvor mange der kommer.
                 At du deltager aktivt i træningen.
                 At du opfører dig ordenligt overfor alle omkring Sønderborg eSport, såvel spillere, modspillere, dommere, tilskuere, forældre
@@ -105,10 +113,10 @@
             info@sonderborgesport.com
         </p>
     </main>
-    <footer>
-        <p>© 2022 Sønderborg eSport - Alle rettigheder forbeholdes</p>
-        <img src="" alt="Facebook link">
-        <img src="" alt="Instagram link">
+    <footer class="footer">
+        <p class="footer__text">© 2022 Sønderborg eSport - Alle rettigheder forbeholdes</p>
+        <img class="footer__facebook" src="Facebook orange.png" alt="Facebook link">
+        <img class="footer__instagram" src="IG orange.png" alt="Instagram link">
     </footer>
     <script src="praktiskinfo__script.js"></script>
     

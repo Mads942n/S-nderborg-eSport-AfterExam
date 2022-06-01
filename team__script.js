@@ -16,10 +16,10 @@ function getcards(){
         let output;
 
         json.personale.forEach(i => {
-            output += `<article class="cards__card">
-                        <h1 class="cards__title">${i.name} - ${i.position}</h1>
-                        <p class="cards__description">${i.description}</p>
-                        <img class="cards__person" src="${i.image}" alt="Spiller Billede">
+            output += `<article class="card">
+                        <h1 class="card__title">${i.name} - ${i.position}</h1>
+                        <p class="card__description">${i.description}</p>
+                        <img class="card__person" src="${i.image}" alt="Spiller Billede">
                         </article>`
         });
         section.innerHTML = output
