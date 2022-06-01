@@ -2,7 +2,7 @@
 
 .header {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.630762) 58.85%, rgba(0, 0, 0, 0.460938) 83.33%, rgba(0, 0, 0, 0) 100%);
-    position: absolute;
+    position: fixed;
     width: 100%;
     .navbar {
         display: flex;
