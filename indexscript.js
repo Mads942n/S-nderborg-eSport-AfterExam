@@ -10,13 +10,13 @@ dots.forEach(e => {
     e.addEventListener('click', () => currentSlide(e.getAttribute('id')))
 });
 
-const prev = document.querySelector('.prev');
+const prev = document.querySelector('.arrowsection__prev');
 prev.addEventListener('click', () => {
     plusSlides(prev.getAttribute('id'))
     
 })
 
-const next = document.querySelector('.next');
+const next = document.querySelector('.arrowsection__next');
 next.addEventListener('click', () => {
     plusSlides(next.getAttribute('id'))
     
