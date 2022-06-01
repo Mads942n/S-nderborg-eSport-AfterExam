@@ -4,7 +4,6 @@
     img{
         max-width: 100%;
     }
-
     &__wide{
 
     }
@@ -14,16 +13,18 @@
     &__lan{
 
     }
+    h2{
+        color: $textprimary;
+        font-family: $fontprimary;
+        font-size: 0.93em;
+        
+    
+    }
+    h3{
+        color: $textprimary;
+        font-family: $fontprimary;
+        font-size: 0.625em;
+    }
+    
 }
 
-h2{
-    color: $textprimary;
-    font-family: $fontprimary;
-    font-size: 0.93em;
-
-}
-h3{
-    color: $textprimary;
-    font-family: $fontprimary;
-    font-size: 0.625em;
-}
