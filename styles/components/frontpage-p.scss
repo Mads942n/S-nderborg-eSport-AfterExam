@@ -1,0 +1,55 @@
+@use "../core/" as *;
+
+.infoboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    top: -18em;
+
+    background-color: $primarycolor;
+
+    width: 23.5em;
+    height: 20.5em;
+
+    &__title {
+        font-family: $fontprimary;
+        font-size: 1.5em;
+        color: $textsecondary;
+        margin-top: 0.9em;
+    }
+    &__description {
+        font-family: $fontsecondary;
+        font-size: 1.3em;
+        color: $textprimary;
+        text-align: center;
+        line-height: 1.7em;
+        margin: 1.78em;
+        margin-top: 0.9em;
+    }
+    &__img {
+        width: 4.25em;
+        
+    }
+}
+
+.buttondescription {
+    font-size: 1em;
+    max-width: 15.25em;
+    margin: auto;
+    margin-top: 3em;
+    text-align: center;
+    color: $textprimary;
+    justify-self: center;
+    
+}
+
+.praktiskinfobutton {
+    margin-top: 2em;
+    display: flex;
+        .primary__button{
+            justify-self: center;
+            margin: 1.1em auto;
+        }
+    
+}

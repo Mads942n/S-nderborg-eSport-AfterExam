@@ -1,29 +1,74 @@
 
 let slideIndex = 1;
+let slides = document.querySelectorAll('.slideshow__slide');
+
+let dots = document.querySelectorAll('.dots__dot');
+
 showSlides(slideIndex);
 
-// Next/previous controls
+dots.forEach(e => {
+    e.addEventListener('click', () => currentSlide(e.getAttribute('id')))
+});
+
+const prev = document.querySelector('.arrowsection__prev');
+prev.addEventListener('click', () => {
+    plusSlides(prev.getAttribute('id'))
+    
+})
+
+const next = document.querySelector('.arrowsection__next');
+next.addEventListener('click', () => {
+    plusSlides(next.getAttribute('id'))
+    
+})
+
+
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+    let result = slideIndex =+ n;
+    showSlides(result);
+  }
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+    console.log(n)
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+
+
+let x = 1
+
+//slideshowloop();
+
+function slideshowloop(){
+    setTimeout(() => {
+        currentSlide(slideIndex + 1)
+        slideshowloop()
+    }, 500);
 }
+
 
 function showSlides(n) {
-  let i;
-  let slides = document.querySelectorAll('.slideshow');
-  let dots = document.querySelectorAll('.dots');
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
+    let i;
+    console.log(n)
+
+    let slides = document.querySelectorAll('.slideshow__slide');
+    let dots = document.querySelectorAll('.dots__dot');
+
+    if(n > slides.length){slideIndex = 1};
+
+    if(n < 1){slideIndex = slides.length};
+
+
+    for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
+    }
+    for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+    }
+
+    console.log(slides)
+    console.log(dots)
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+
 }

@@ -2,16 +2,53 @@
 
 .header {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.630762) 58.85%, rgba(0, 0, 0, 0.460938) 83.33%, rgba(0, 0, 0, 0) 100%);
-    position: absolute;
+    position: fixed;
+    width: 100%;
     .navbar {
         display: flex;
         justify-content: space-between;
         
         &__logo {
             max-width: 10%;
-            max-height: 1%;
+        }
+        .burger__checkbox {
+        opacity: 0%;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+        width: 3em;
+        height: 3em;
+        }
+        .hidden {
+        display: none;
+        }
+        .searchicon {
+        padding: 1em;
         }
     }
-    } 
+    .burger__lines {
+        margin: 1em;
+    }
+    .burger__line {
+            width: 2em;
+            height: 0.5em;
+            background-color: #f98e39;
+            border-radius: 1em;
+            margin: 0.2em;
+        }
+}
+@media screen and (max-width: 1000px) {
+        .navbar {
+            &__logo {
+                display: none;
+            }
+            &__searchbar {
+                display: none;  
+            }
+        .menu {
+            display: none;
+        }
+    }
+} 
 
 

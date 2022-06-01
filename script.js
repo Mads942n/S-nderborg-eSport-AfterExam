@@ -11,9 +11,7 @@ Alle sider:
 Forside:
     - Slideshow med dots.
 
-Hold:
-    -Hele siden er et slideshow.
-    -Slideshow skal være interaktivt.
+
 
 V̶o̶r̶e̶s̶ T̶e̶a̶m̶:̶
     -̶T̶r̶æ̶n̶e̶r̶ k̶o̶r̶t̶,̶ i̶n̶f̶o̶ s̶k̶a̶l̶ h̶e̶n̶t̶e̶s̶ n̶e̶d̶ f̶r̶a̶ J̶S̶O̶N̶ f̶i̶l̶.̶
@@ -26,7 +24,7 @@ V̶o̶r̶e̶s̶ T̶e̶a̶m̶:̶
         <̶/̶a̶r̶t̶i̶c̶l̶e̶>̶
 
 Praktisk info:
-    -̶D̶r̶o̶p̶d̶o̶w̶n̶ i̶n̶f̶o̶ k̶a̶s̶s̶e̶r̶,̶ m̶e̶d̶ a̶n̶i̶m̶a̶t̶i̶o̶n̶
+    -Dropdown info kasser, med animation
     - Google maps integration:
       https://developers.google.com/maps/documentation/javascript/adding-a-google-map#maps_add_map-javascript
 

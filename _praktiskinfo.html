@@ -8,34 +8,29 @@
     <title>Praktisk Info</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <nav class="navbar">
-        <img src="" alt="Logo"> <!--Der skal være et CSS class, "Hidden"
-                                    der bliver tilføjet når det er ipad størrelse eller mindre-->
-        <input type="search" name="" id="">
-        <div class="navbar-container"> <!-- Der bliver tilføjet en Hidden class,
+          <img src="images/Logo.png" alt="Logo" class="navbar__logo hidden"/>
+            <!-- Der bliver tilføjet en Hidden class,
                                             når den bliver vist på desktop-->
-            <input type="checkbox">
-            <div class="hamburger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-            </div>
-            <ul class="menu-items">
-                <li><a href="index.html">Forside</a></li>
-                <li><a href="hold.html">Hold</a></li>
-                <li><a href="team.html">Vores Team</a></li>
-                <li><a href="praktiskinfo.html">Praktisk Info</a></li>
+            <ul class="menu">
+                <li class="menu__item item1"><a href="_index.html">Forside</a></li>
+                <li class="menu__item item2"><a href="_hold.html">Hold</a></li>
+                <li class="menu__item item3"><a href="_team.html">Vores Team</a></li>
+                <li class="menu__item item4"><a href="_praktiskinfo.html">Praktisk Info</a></li>
             </ul>
-        </div>
-        <div class="Hidden"> <!--Classen hidden bliver kun sat på når det er ipad størrelse eller mindre-->
-            <a href="index.html">Forside</a>
-            <a href="hold.html">Hold</a>
-            <a href="team.html">Vores Team</a>
-            <a href="praktiskinfo.html">Praktisk Info</a>
-        </div>
+            <img src="images/search.png" class="searchicon"/>
+            <section class="burger"></section>
+            <input type="checkbox" class="burger__checkbox"/>
+            <section class="burger__lines">
+              <div class="burger__line line1"></div>
+              <div class="burger__line line2"></div>
+              <div class="burger__line line3"></div>
+            </section>
+            <input type="search" name="" id="" class="navbar__searchbar hidden"/>
+          </section>
         </nav>
-    </header>
+      </header>
     <main>
         <h1>Praktisk information</h1>
         <article class="Kontigent 1">
