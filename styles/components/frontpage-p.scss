@@ -5,12 +5,9 @@
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    top: -18em;
 
     background-color: $primarycolor;
-
-    width: 23.5em;
-    height: 20.5em;
+    max-width: 80%;
 
     &__title {
         font-family: $fontprimary;

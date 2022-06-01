@@ -1,38 +1,25 @@
 @use "../core/" as *;
 
 
-* {box-sizing:border-box}
-
 .slideshow {
-    max-width: 100%;
-    margin-right: 0;
-    
-        &__slide {
-            display: block;
-            width: 100%;
-            max-height: 25%;
-        }
+    margin-bottom: -9.5em;
         img{
-            margin: 0 auto;
-            
             max-width: 100%;
-            display: block;
-            
-            
         }
-        &__button {
+        &__buttons {
             position: relative;
+            display: block;
+            top: -18em;
+            margin: auto;
+        }
+
+        &__button {
+            position: relative; 
             bottom: -2em;
             margin-left: 5em;
         }
   }
 
-  .slideshow__buttons {
-    position: relative;
-    display: block;
-    top: -18em;
-    margin: auto;
-  }
 
   
 .dots {
