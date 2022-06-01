@@ -2,31 +2,20 @@
 
 
 .slideshow {
-    margin-bottom: -9.5em;
         img{
             max-width: 100%;
         }
         &__buttons {
             position: relative;
-            display: block;
-            top: -18em;
-            margin: auto;
         }
 
         &__button {
-            position: relative; 
-            bottom: -2em;
-            margin-left: 5em;
+        }
+        &__slide {
         }
   }
 
-
-  
 .dots {
-
-    position: relative;
-    bottom: -4em;
-
     text-align: center;
 
     &__dot {
@@ -57,10 +46,6 @@
     
     &__prev, &__next {
         cursor: pointer;
-        position: relative;
-        top: 25%;
-        width: auto;
-        margin-top: 2.5em;
         padding: 1em;
         color: white;
         font-weight: bold;
@@ -68,11 +53,6 @@
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
         user-select: none;
-    
-      }
-    
-      &__next {
-        border-radius: 3px 0 0 3px;
       }
 }
 
