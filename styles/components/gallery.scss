@@ -1,24 +1,33 @@
 @use "../core/" as *;
 
+.body{
+    background-image: url("images/Lan billede baggrund.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2em;
+    margin: 0 2em 0 2em;
     img{
         max-width: 100%;
     }
     &__wide{
-
+        grid-column: 1/3;
     }
     &__gamenight{
-
+        height: 50%;
     }
     &__lan{
-
+        height: 50%;
     }
     h2{
         color: $textprimary;
         font-family: $fontprimary;
         font-size: 0.93em;
-        
-    
     }
     h3{
         color: $textprimary;
@@ -28,3 +37,30 @@
     
 }
 
+.video__title{
+    color: $textprimary;
+    font-family: $fontprimary;
+    font-size: 0.93em;
+    margin-top: 2em;
+    text-align: center;
+
+}
+
+.iframe__container{
+    
+
+    position: relative;
+    padding-bottom: 56.25%;
+    width: 100%;
+    height: 0;
+
+    iframe{
+        padding: 2em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+    }
+}
