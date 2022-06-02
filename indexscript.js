@@ -1,4 +1,3 @@
-
 let slideIndex = 1;
 let slides = document.querySelectorAll('.slideshow__slide');
 let dots = document.querySelectorAll('.dots__dot');

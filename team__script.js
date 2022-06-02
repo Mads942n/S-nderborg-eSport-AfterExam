@@ -12,7 +12,7 @@ function getcards(){
     })
     .then( json => {
         /* Declaring a variable called output. */
-        let output;
+        let output = "";
         /* Looping through the JSON file and putting the data into the HTML. */
         json.personale.forEach(i => {
             output += `<article class="card">
