@@ -8,6 +8,7 @@
   .kontigent__title {
     font-size: 1.5em;
     font-family: $fontsecondary;
+    color: $textprimary;
   }
 
   .kontigent__period,
@@ -19,7 +20,7 @@
     text-align: center;
     font-family: $fontprimary;
     color: $textprimary;
-    font-size: 2em;
+    font-size: 130%;
     margin-bottom: 1em;
   }
 
@@ -29,18 +30,19 @@
     color: $textprimary;
     font-size: 1em;
     margin: 1em auto 1.5em auto;
-    width: 60%;
+    width: 80%;
   }
 
   .kontigent {
     display: flex;
     justify-content: space-evenly;
     gap: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
 
     &__kontigentcard {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 0.5em;
       background-color: #7b7b7b;
       clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 25% 100%, 0 65%);
       z-index: -1;
@@ -63,7 +65,12 @@
       transform: scale(0.5);
       clip-path: none;
       position: relative;
-      left: 2em;
     }
   }
+}
+
+@media screen and (min-width: 830px) {
+}
+
+@media screen and (min-width: 1400px) {
 }

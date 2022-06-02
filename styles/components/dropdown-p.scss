@@ -1,11 +1,11 @@
 @use "../core/" as *;
 
 .dropdown {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   margin-top: 2em;
   gap: 2.5em;
-  justify-content: center;
+  align-items: center;
   &__button {
     all: unset;
     background-color: $primarycolor;
@@ -36,9 +36,6 @@
     overflow: hidden;
     animation-duration: 1s;
     animation-name: expand;
-  }
-  &__section {
-    width: 50%;
   }
 }
 .findus {
@@ -72,5 +69,22 @@
     display: block;
     width: 100%;
     transform: scaleY(1);
+  }
+}
+
+@media screen and (min-width: 830px) {
+  .dropdown {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &__section {
+      margin: 0 auto;
+    }
+  }
+}
+@media screen and (min-width: 1400px) {
+  .dropdown {
+    display: flex;
+    flex-direction: row;
   }
 }
