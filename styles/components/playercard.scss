@@ -1,28 +1,39 @@
 @use "../core/" as *;
 
+
 .card{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 2fr;
     background-image: url("images/Player Card.png");
     background-repeat: no-repeat;
-    max-width: 14.5em;;
-    margin: 0 auto;
+    max-height: 14.5em;
+    max-width: 21.5em;
+    margin: 3em auto;
+    gap: 1em;
 
 
-    &__titel{
+    &__title{
         grid-column: 1/3;
+        grid-row: 1;
+        max-height: 2.87em;
         margin-left: 1em;
+        margin-top: 1em;
+        font-size: 1.25em;
+        font-family: $fontprimary;
+        color: $textsecondary;
     }
     &__description{
         grid-column: 1;
         grid-row: 2;
-        margin-left: 1em;
+        margin-left: 2em;
     }
     &__person{
+        display: table;
         grid-column: 2;
-        grid-row: 2;
-        width: 7.25em;
+        grid-row: 1/3;
+        height: 14.5em;
+        margin: 0 auto;
     }
 
 }
