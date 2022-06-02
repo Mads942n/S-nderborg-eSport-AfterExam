@@ -2,25 +2,46 @@
 
 
 .main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    
+    .kontigent__period, .kontigent__price, .kontigent__months, .kontigent__valuta {
+        font-size: 1.5em;
+    }
+
+    .kontigent__period, .kontigent__months {
+        padding-left: 0.5em;
+    }
+
+    h2, p {
+        font-family: $fontsecondary;
+    }
 
     h1{
-        grid-column: 1/3;
+        padding-top: 2.5em;
+        text-align: center;
+        font-family: $fontprimary;
+        color: $textprimary;
+        font-size: 2em;
+        margin-bottom: 1em;
     }
-}
+    .kontigent {
+        display: flex;
+        justify-content: space-evenly;
 
-.kontigent{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    width: 10em;
-    height: 7em;
+        &__p {
+        }
+
+    &__kontigentcard{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5em;
     background-color: #7B7B7B;
     clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 25% 100%, 0 65%);
+    }
 
     &__title{
         grid-column: 1/3;
+        text-align: center;
+        font-size: 1.5em;
     }
     &__period{
         grid-column: 1;
@@ -33,6 +54,6 @@
         transform: scale(0.50);
         clip-path: none;
         position: relative;
-
+    }
     }
 }
