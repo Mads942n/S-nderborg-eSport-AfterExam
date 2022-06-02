@@ -1,6 +1,7 @@
 @use "../core/" as *;
 
 .footer {
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   background: linear-gradient(
