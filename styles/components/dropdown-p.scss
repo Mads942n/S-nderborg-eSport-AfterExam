@@ -25,7 +25,6 @@
     &__content {
         background-color: white;
         padding: 1.5em;
-        padding-top: 0;
         margin-top: 0;
         margin-right: 0;
 
@@ -41,7 +40,8 @@
         padding: 1em;
     }
     .active {
-        
+        transform-origin: top left;
+        overflow: hidden;
         animation-duration: 1s;
         animation-name: expand;
         
@@ -75,9 +75,8 @@
 @keyframes expand {
     0% {
         color: transparent;
-        display: none;
         width: 0%;
-        height: 30%;
+        transform: scaleY(0);
     }
     75% {
         color: transparent;
@@ -85,7 +84,7 @@
     100% {
         color: $textsecondary;
         display: block;
-        width: 90%;
-        height: 100%;
+        width: 100%;
+        transform: scaleY(1);
     }
 }
