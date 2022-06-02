@@ -24,6 +24,7 @@
     }
     &__content {
         background-color: white;
+<<<<<<< Updated upstream
         padding: 1.5em;
         margin-right: 0;
         font-family: $fontsecondary;
@@ -34,6 +35,13 @@
     }
     .hidden {
         display: none;
+======
+        font-family: $textsecondary;
+        padding: 1em;
+    }
+    &__section {
+        width: 50%;
+>>>>>>> Stashed changes
     }
 
 }
