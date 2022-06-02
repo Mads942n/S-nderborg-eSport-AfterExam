@@ -1,10 +1,8 @@
 
 function getcards(){
-
-    /* Getting the JSON file and putting it into the HTML. */
+    /* Fetchin the JSON file */
     const section = document.querySelector('.cards')
     const fetchPromise = fetch('personale.JSON');
-
     fetchPromise
     .then( response => {
         if (!response.ok) {
@@ -13,11 +11,8 @@ function getcards(){
         return response.json();
     })
     .then( json => {
-
         /* Declaring a variable called output. */
         let output;
-
-
         /* Looping through the JSON file and putting the data into the HTML. */
         json.personale.forEach(i => {
             output += `<article class="card">
@@ -30,8 +25,11 @@ function getcards(){
     })
     /* Catching any errors that might occur. */
     .catch( error => {
-        console.error(`Could not get products: ${error}`);
+        console.error(`Could not get data: ${error}`);
     });
 }
-
 getcards();
+
+
+
+
