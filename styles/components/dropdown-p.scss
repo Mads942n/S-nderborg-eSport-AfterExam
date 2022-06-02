@@ -1,63 +1,56 @@
 @use "../core/" as *;
 
-.main{
-    gap: 2em;
-}
-
 .dropdown {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    margin-top: 2em;
-    align-items: center;
-    
-    &__button{
-        all: unset;
-        background-color: $primarycolor;
-        box-shadow: 0.5em 0.5em white;
-        height: 3em;
-        text-align: center;
-        color: $textprimary;
-        font-family: $fontprimary;
-        width: 20em;
-        height: 4em;
-    }
-    &__content {
-        background-color: white;
-<<<<<<< Updated upstream
-        padding: 1.5em;
-        margin-right: 0;
-        font-family: $fontsecondary;
-        line-height: 1.2em;
-    }
-    &__section {
-        
-    }
-    .hidden {
-        display: none;
-======
-        font-family: $textsecondary;
-        padding: 1em;
-    }
-    &__section {
-        width: 50%;
->>>>>>> Stashed changes
-    }
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin-top: 2em;
+  gap: 2.5em;
+  justify-content: center;
 
+  &__section {
+  }
+
+  &__button {
+    all: unset;
+    background-color: $primarycolor;
+    box-shadow: 0.5em 0.5em white;
+    text-align: center;
+    color: $textprimary;
+    font-family: $fontprimary;
+    width: 150%;
+    height: 100%;
+    padding: 0.5em;
+  }
+  &__content {
+    background-color: white;
+    padding: 1.5em;
+    margin-right: 0;
+    font-family: $fontsecondary;
+    line-height: 1.2em;
+  }
+
+  .hidden {
+    display: none;
+    font-family: $textsecondary;
+    padding: 1em;
+  }
+  &__section {
+    width: 50%;
+  }
 }
 .findus {
-    margin-top: 2em;
-    color: $textprimary;
-    &__title {
-        font-family: $fontprimary;
-        text-align: center;
-    }
-    &__info {
-        font-family: $fontsecondary;
-        text-align: center;
-        padding-left: 2em;
-        padding-right: 2em;
-        padding-top: 1em;
-        line-height: 1.5em;
-    }
+  margin-top: 2em;
+  color: $textprimary;
+  &__title {
+    font-family: $fontprimary;
+    text-align: center;
+  }
+  &__info {
+    font-family: $fontsecondary;
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    line-height: 1.5em;
+  }
 }

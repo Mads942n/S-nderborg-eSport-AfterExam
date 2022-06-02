@@ -1,5 +1,9 @@
 @use "../core/" as *;
 
 body {
-    background-color: $secondarycolor;
+  background-color: $secondarycolor;
+
+  main {
+    padding-top: 20%;
+  }
 }
