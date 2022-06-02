@@ -22,28 +22,27 @@
     padding: 1em;
   }
   &__facebook {
-    width: 8%;
-    height: 8%;
-    margin: 1em;
+    width: 5%;
+    height: 5%;
+    margin: auto 0;
+    padding: 1em;
   }
   &__instagram {
-    width: 8%;
-    height: 8%;
-    margin: 1em;
+    width: 5%;
+    height: 5%;
+    margin: auto 0;
+    padding: 1em;
   }
 }
 
 @media screen and (min-width: 820px) {
   .footer {
     &__facebook {
-      width: 5%;
-      height: 5%;
-      margin: 1em;
+      width: 3%;
     }
     &__instagram {
-      width: 5%;
-      height: 5%;
-      margin: 1em;
+      max-width: 3%;
+
     }
   }
 }
