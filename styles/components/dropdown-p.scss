@@ -6,33 +6,38 @@
   margin-top: 2em;
   gap: 2.5em;
   justify-content: center;
-
-  &__section {
-  }
-
   &__button {
     all: unset;
     background-color: $primarycolor;
     box-shadow: 0.5em 0.5em white;
+    height: 3em;
     text-align: center;
     color: $textprimary;
     font-family: $fontprimary;
-    width: 150%;
-    height: 100%;
-    padding: 0.5em;
+    width: 20em;
+    height: 4em;
   }
   &__content {
     background-color: white;
     padding: 1.5em;
+    margin-top: 0;
     margin-right: 0;
+
     font-family: $fontsecondary;
     line-height: 1.2em;
   }
-
+  &__section {
+  }
   .hidden {
     display: none;
     font-family: $textsecondary;
     padding: 1em;
+  }
+  .active {
+    transform-origin: top left;
+    overflow: hidden;
+    animation-duration: 1s;
+    animation-name: expand;
   }
   &__section {
     width: 50%;
@@ -52,5 +57,22 @@
     padding-right: 2em;
     padding-top: 1em;
     line-height: 1.5em;
+  }
+}
+
+@keyframes expand {
+  0% {
+    color: transparent;
+    width: 0%;
+    transform: scaleY(0);
+  }
+  75% {
+    color: transparent;
+  }
+  100% {
+    color: $textsecondary;
+    display: block;
+    width: 100%;
+    transform: scaleY(1);
   }
 }
