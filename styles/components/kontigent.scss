@@ -4,7 +4,10 @@
   .kontigent__period,
   .kontigent__price,
   .kontigent__months,
-  .kontigent__valuta,
+  .kontigent__valuta {
+    font-family: $fontsecondary;
+    color: $textprimary;
+  }
   .kontigent__title {
     font-size: 1.5em;
     font-family: $fontsecondary;
@@ -13,7 +16,12 @@
 
   .kontigent__period,
   .kontigent__months {
-    padding-left: 0.5em;
+    padding-left: 1.5em;
+  }
+
+  .kontigent__price,
+  .kontigent__valuta {
+    padding-right: 1.5em;
   }
 
   h1 {
@@ -36,9 +44,9 @@
   .kontigent {
     display: flex;
     justify-content: space-evenly;
+    margin-left: 1em;
+    margin-right: 1em;
     gap: 1em;
-    margin-left: 2em;
-    margin-right: 2em;
 
     &__kontigentcard {
       display: grid;
