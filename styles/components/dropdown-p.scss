@@ -24,9 +24,11 @@
     }
     &__content {
         background-color: white;
-<<<<<<< Updated upstream
         padding: 1.5em;
+        padding-top: 0;
+        margin-top: 0;
         margin-right: 0;
+
         font-family: $fontsecondary;
         line-height: 1.2em;
     }
@@ -35,13 +37,17 @@
     }
     .hidden {
         display: none;
-======
         font-family: $textsecondary;
         padding: 1em;
     }
+    .active {
+        
+        animation-duration: 1s;
+        animation-name: expand;
+        
+    }
     &__section {
         width: 50%;
->>>>>>> Stashed changes
     }
 
 }
@@ -59,5 +65,27 @@
         padding-right: 2em;
         padding-top: 1em;
         line-height: 1.5em;
+    }
+}
+
+
+
+
+
+@keyframes expand {
+    0% {
+        color: transparent;
+        display: none;
+        width: 0%;
+        height: 30%;
+    }
+    75% {
+        color: transparent;
+    }
+    100% {
+        color: $textsecondary;
+        display: block;
+        width: 90%;
+        height: 100%;
     }
 }

@@ -1,14 +1,15 @@
-const article__dropdown__title = document.querySelectorAll('.dropdown__title')
+const article__dropdown__button = document.querySelectorAll('.dropdown__button')
 const article__dropdown = document.querySelectorAll('.dropdown')
 
+article__dropdown__button.forEach( i => {
+    i.addEventListener('click', () => {
 
-article__dropdown__title.forEach( i => {
-    i.addEventListener('click', dropdown => {
-    i.parentNode.classList.add('dropdown--animation')
-    console.log(i.parentNode)
+       if (i.nextElementSibling.classList.contains('hidden') == true){
+           i.nextElementSibling.classList.replace('hidden', 'active')
+       } else{
+           i.nextElementSibling.classList.replace('active','hidden')
+       }
 
-    setTimeout(() =>{
-        i.parentNode.classList.remove('dropdown--animation')
-    }, 500);
     })
 })
+
