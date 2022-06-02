@@ -1,6 +1,7 @@
 @use "../core/" as *;
 
 .header {
+  z-index: 2;
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0.75) 0%,
