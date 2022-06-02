@@ -20,6 +20,16 @@
         font-size: 2em;
         margin-bottom: 1em;
     }
+
+    .timeframetext {
+        font-family: $fontsecondary;
+        text-align: center;
+        color: $textprimary;
+        font-size: 1em;
+        margin: 1em auto 1.5em auto;
+        width: 60%;
+    }    
+
     .kontigent {
         display: flex;
         justify-content: space-evenly;
