@@ -45,7 +45,6 @@
       grid-template-columns: 1fr 1fr;
       background-color: #7b7b7b;
       clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 25% 100%, 0 65%);
-      z-index: -1;
     }
 
     &__title {
@@ -68,6 +67,8 @@
     }
   }
 }
+
+
 
 @media screen and (min-width: 820px) {
 }
