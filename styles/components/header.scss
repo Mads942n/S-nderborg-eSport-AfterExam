@@ -49,6 +49,41 @@
             display: none;
         }
     }
-} 
+}
+
+@media screen and (min-width: 1000px){
+    .navbar {
+        display: block;
+        .menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 90%;
+            margin: auto 0;
+            a{
+                text-decoration: none;
+                font-family: $fontprimary;
+                color: $textprimary;
+                &:hover{
+                    color: $primarycolor;
+                }
+            }
+            .active{
+                color: $primarycolor;
+            }
+        }
+        &__logo{
+            display: block;
+            padding: 1em;
+        }
+        .searchicon{
+            max-height: 100%;
+            margin: auto 0;
+        }
+    }
+    .burger__lines{
+        display: none;
+    }
+}
 
 

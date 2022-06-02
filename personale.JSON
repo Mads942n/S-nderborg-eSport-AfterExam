@@ -2,16 +2,50 @@
     "personale":[
         {
             "name": "Carsten",
-            "lastname": "Dohrmann",
             "position": "Formand",
             "image": "images/crew/Carsten Dohrmann.png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
         },
         {
-            "name": "Michael",
-            "lastname": "Jensen",
-            "position": "Næstformand",
+            "name": "Christopher",
+            "position": "Træner",
+            "image": "images/crew/Christopher Ernst.png",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "name": "Jacob",
+            "position": "Træner",
+            "image": "images/crew/JacobK.png",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "name": "Jesper",
+            "position": "Træner",
+            "image": "images/crew/JesperK.png",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "name": "Jessica",
+            "position": "Træner",
+            "image": "images/crew/jessica.png",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "name": "Kim",
+            "position": "Kasserer",
             "image": "images/crew/KimT.png",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "name": "Lasse",
+            "position": "Bestyrelse",
+            "image": "images/crew/Lasse Ooms..png",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "name": "Martin",
+            "position": "Træner",
+            "image": "images/crew/Martin1.png",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
         }
     ]
