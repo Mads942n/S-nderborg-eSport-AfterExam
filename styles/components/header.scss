@@ -44,7 +44,7 @@
     margin: 0.2em;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 820px) {
   .navbar {
     &__logo {
       display: none;
@@ -58,7 +58,7 @@
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 820px) {
   .navbar {
     display: block;
     .menu {

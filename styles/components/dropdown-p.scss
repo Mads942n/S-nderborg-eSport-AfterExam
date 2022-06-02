@@ -6,23 +6,29 @@
   margin-top: 2em;
   gap: 2.5em;
   align-items: center;
+  
+  &__section{
+    display: flex;
+    flex-direction: column;
+  }
   &__button {
     all: unset;
     background-color: $primarycolor;
     box-shadow: 0.5em 0.5em white;
-    height: 3em;
     text-align: center;
     color: $textprimary;
     font-family: $fontprimary;
     width: 20em;
     height: 4em;
+    margin: 0 auto;
+    justify-self: center;
+    
   }
   &__content {
+      margin: 0 auto;
     background-color: white;
     padding: 1.5em;
-    margin-top: 0;
-    margin-right: 0;
-
+    max-width: 70%;
     font-family: $fontsecondary;
     line-height: 1.2em;
   }
@@ -58,7 +64,6 @@
 @keyframes expand {
   0% {
     color: transparent;
-    width: 0%;
     transform: scaleY(0);
   }
   75% {
@@ -67,7 +72,6 @@
   100% {
     color: $textsecondary;
     display: block;
-    width: 100%;
     transform: scaleY(1);
   }
 }
@@ -76,15 +80,35 @@
   .dropdown {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
 
     &__section {
-      margin: 0 auto;
+        margin: 0 auto;
+        margin-bottom: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    &__button{
+        margin: 0 auto;
+        justify-self: center;
+        
+    }
+    &__content{
+        margin: 0 auto;
+        max-width: 70%;
     }
   }
 }
 @media screen and (min-width: 1400px) {
   .dropdown {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0;
+    margin: 1em 2em 0 2em;
+    
+
+    &__section{
+        margin-bottom: auto;
+    }
   }
 }
